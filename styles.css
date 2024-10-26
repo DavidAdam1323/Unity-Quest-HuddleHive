@@ -47,7 +47,7 @@ body {
 }
 
 .logo {
-  width: 70px;
+  width: 100px;
   height: auto;
 }
 
@@ -58,14 +58,18 @@ body {
   border-radius: 1rem;
   border: solid 0.1rem #d4d4d4;
   width: 100%;
-  max-width: 320px;
+  max-width: 360px;
   height: 300px;
 }
 
-.challenges-title {
+.challenges-title, .leader-board-title {
   margin-top: 10px;
   margin-left: 15px;
   font-size: 1.5rem;
+}
+
+.leader-board-title {
+  margin-left: 25px;
 }
 
 /* Navigation bar */
@@ -126,10 +130,6 @@ button.prev, button.next {
   .user-name,
   .points {
     font-size: 2rem;
-  }
-
-  .logo {
-    width: 50px;
   }
 
   .nav-links li {
