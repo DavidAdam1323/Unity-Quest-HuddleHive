@@ -46,6 +46,7 @@
 
 .challenges {
   display: flex;
+  flex-direction: column;
   margin-top: 10px;
   border-radius: 1rem;
   border: solid .1rem #D4D4D4;
@@ -73,4 +74,25 @@
 
 a {
   text-decoration: none;
+}
+
+/* Carousel */
+#slider { 
+  position: relative;
+  width: 300px; 
+  margin: 20px auto;
+}
+.slide {
+  position: absolute;
+  width: 300px;
+  left: 0px;
+  top: 0px;
+  animation-name:fading;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes fading {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
 }
