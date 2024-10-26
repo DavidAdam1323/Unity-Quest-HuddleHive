@@ -23,7 +23,6 @@ body {
   position: relative;
   background: #7fdca9;
   width: 100%;
-  /* max-width: 390px; */
   height: 200px;
   border-bottom-left-radius: 50%; 
   border-bottom-right-radius: 50%; 
@@ -131,11 +130,6 @@ button.prev, button.next {
 
   .logo {
     width: 50px;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    align-items: center;
   }
 
   .nav-links li {
