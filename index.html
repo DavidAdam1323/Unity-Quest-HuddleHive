@@ -1,26 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unity Quest</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="main-container">
-    <div class="user-details-section">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unity Quest</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+
       <div class="circle">
-        <h1 class="user-name">Jack.</h1>
-        <p class="points">95XP</p>
-        <img class="logo" src="assets/logo.svg" alt="Logo">
+        <div class="user-details-section">
+          <h1 class="user-name">Jack.</h1>
+          <p class="points">95XP</p>
+          <img class="logo" src="assets/logo.svg" alt="Logo" />
+        </div>
+      </div>
+
+      <div class="challenges">
+        <h2 class="challenges-title">Challenges</h2>
+        <div class="challenges-cards"></div>
+        <div class="challenges-cards"></div>
+        <div class="challenges-cards"></div>
       </div>
     </div>
-    <div class="challenges">
-      <div class="challenges-cards"></div>
-      <div class="challenges-cards"></div>
-      <div class="challenges-cards"></div>
+
+    <div class="nav-bar">
+      <ul class="nav-links">
+        <li>
+          <a href="home">Home</a>
+        </li>
+        <li>
+          <a href="quest">My Quest</a>
+        </li>
+        <li>
+          <a href="messages">Messages</a>
+        </li>
+        <li>
+          <a href="account">My Account</a>
+        </li>
+      </ul>
     </div>
-  </div>
-  <script src="scripts.js"></script>
-</body>
+    <script src="scripts.js"></script>
+  </body>
 </html>

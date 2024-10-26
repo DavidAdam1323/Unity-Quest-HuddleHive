@@ -3,7 +3,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* User details */
 .circle {
@@ -11,17 +17,16 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  background: #7FDCA9;
-  width: 551px;
-  height: 250px ;
-  gap: 20px;
+  background: #7fdca9;
+  width: 390px;
+  height: 200px;
 }
 
 .user-details-section {
-  position: absolute;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  position: absolute;
 }
 
 .user-name {
@@ -30,11 +35,42 @@
 }
 
 .points {
-  color: #297CD2;
+  color: #297cd2;
   font-size: 3rem;
 }
 
 .logo {
   width: 100px;
   height: auto;
+}
+
+.challenges {
+  display: flex;
+  margin-top: 10px;
+  border-radius: 1rem;
+  border: solid .1rem #D4D4D4;
+  width: 320px;
+  height: 300px;
+}
+
+.challenges-title {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.nav-bar {
+  height: 3rem;
+  margin-top: 20px;
+  border-top: solid .1rem #D4D4D4;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  ;
+}
+
+a {
+  text-decoration: none;
 }
