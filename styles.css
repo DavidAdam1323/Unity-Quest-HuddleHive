@@ -111,10 +111,22 @@ body {
   /* width: 100%; */
 }
 
+.icon {
+  width: 40px;
+}
+
 .nav-links {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   list-style: none;
+}
+
+.nav-links li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
