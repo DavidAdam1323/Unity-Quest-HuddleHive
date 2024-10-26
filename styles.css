@@ -5,7 +5,11 @@
   box-sizing: border-box;
 }
 
-.main-container {
+body {
+  font-family: Arial, sans-serif;
+}
+
+#home {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,8 +22,11 @@
   align-items: center;
   position: relative;
   background: #7fdca9;
-  width: 390px;
+  width: 100%;
+  /* max-width: 390px; */
   height: 200px;
+  border-bottom-left-radius: 50%; 
+  border-bottom-right-radius: 50%; 
 }
 
 .user-details-section {
@@ -27,20 +34,21 @@
   justify-content: space-around;
   align-items: center;
   position: absolute;
+  width: 90%;
 }
 
 .user-name {
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .points {
   color: #297cd2;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .logo {
-  width: 100px;
+  width: 70px;
   height: auto;
 }
 
@@ -49,50 +57,93 @@
   flex-direction: column;
   margin-top: 10px;
   border-radius: 1rem;
-  border: solid .1rem #D4D4D4;
-  width: 320px;
+  border: solid 0.1rem #d4d4d4;
+  width: 100%;
+  max-width: 320px;
   height: 300px;
 }
 
 .challenges-title {
   margin-top: 10px;
   margin-left: 15px;
+  font-size: 1.5rem;
 }
 
+/* Navigation bar */
 .nav-bar {
   height: 3rem;
   margin-top: 20px;
-  border-top: solid .1rem #D4D4D4;
+  border-top: solid 0.1rem #d4d4d4;
+  /* width: 100%; */
 }
 
 .nav-links {
   display: flex;
   justify-content: space-around;
   list-style: none;
-  ;
 }
 
 a {
   text-decoration: none;
+  color: #297cd2;
+  font-weight: bold;
 }
 
 /* Carousel */
-#slider { 
+#slider {
   position: relative;
-  width: 300px; 
+  width: 100%;
+  max-width: 300px;
   margin: 20px auto;
 }
+
 .slide {
   position: absolute;
-  width: 300px;
-  left: 0px;
-  top: 0px;
-  animation-name:fading;
+  width: 100%;
+  left: 0;
+  top: 0;
+  animation-name: fading;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
+
 @keyframes fading {
   0% { opacity: 0; }
   50% { opacity: 1; }
   100% { opacity: 0; }
+}
+
+button.prev, button.next {
+  background-color: #297cd2;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .user-name,
+  .points {
+    font-size: 2rem;
+  }
+
+  .logo {
+    width: 50px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+  }
+
+  .challenges {
+    width: 100%;
+    height: auto;
+  }
 }
