@@ -24,8 +24,8 @@ body {
   background: #7fdca9;
   width: 100%;
   height: 200px;
-  border-bottom-left-radius: 50%; 
-  border-bottom-right-radius: 50%; 
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 .user-details-section {
@@ -62,7 +62,8 @@ body {
   height: 300px;
 }
 
-.challenges-title, .leader-board-title {
+.challenges-title,
+.leader-board-title {
   margin-top: 10px;
   margin-left: 15px;
   font-size: 1.5rem;
@@ -70,6 +71,37 @@ body {
 
 .leader-board-title {
   margin-left: 25px;
+}
+
+/* Leader board */
+.board-list,
+.board-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.board-list {
+  padding: 0.5rem 1rem;
+}
+
+.position {
+  padding-right: 1rem;
+}
+
+.name {
+  padding: 0 1rem;
+}
+
+.kf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #8C96E6;
 }
 
 /* Navigation bar */
@@ -111,12 +143,19 @@ a {
 }
 
 @keyframes fading {
-  0% { opacity: 0; }
-  50% { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-button.prev, button.next {
+button.prev,
+button.next {
   background-color: #297cd2;
   color: white;
   border: none;
@@ -135,5 +174,4 @@ button.prev, button.next {
   .nav-links li {
     padding: 10px 0;
   }
-
 }
