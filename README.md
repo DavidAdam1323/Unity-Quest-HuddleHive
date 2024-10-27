@@ -5,7 +5,7 @@ Unity Quest is an interactive platform that encourages users to take on communit
 ---
 # Live Demo
 
-- Check out the live demo [here](https://your-demo-link.com) to explore Unity Quest in action!
+- Check out the live demo [here]([https://your-demo-link.com](https://davidadam1323.github.io/Unity-Quest-HuddleHive/)) to explore Unity Quest in action!
 
 ![Unity Quest Screenshot](assets/screenshot.png)
 
