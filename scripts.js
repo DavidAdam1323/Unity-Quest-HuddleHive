@@ -1,30 +1,22 @@
-const slides = document.querySelectorAll('.slide');
-let index = 0;
+document.addEventListener('DOMContentLoaded', function () {
+  const slides = document.querySelectorAll('.slide');
+  let index = 0;
 
-function prevSlide(){
+  // Set the initial active slide
+  slides[index].classList.add('active');
+
+  function prevSlide() {
     slides[index].classList.remove('active');
-    index--;
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add('active');
+  }
 
-    if(index < 0)
-        index = slides.length -1;
-
-    slides[index].classList.add('active');      
-}
-
-document.querySelector('.prev').addEventListener('click', e => {
-    prevSlide();
-});
-
-function nextSlide(){
+  function nextSlide() {
     slides[index].classList.remove('active');
-    index++;
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+  }
 
-    if(index > slides.length -1)
-        index = 0;
-
-    slides[index].classList.add('active');      
-}
-
-document.querySelector('.next').addEventListener('click', e => {
-    nextSlide();
+  document.querySelector('.prev').addEventListener('click', prevSlide);
+  document.querySelector('.next').addEventListener('click', nextSlide);
 });
